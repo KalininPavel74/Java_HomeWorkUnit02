@@ -1,0 +1,289 @@
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 loggerInit
+INFO: 		
+
+------------------------------------------------------------
+
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 loggerInit
+INFO: 		Логирование инициализировано
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: 
+
+ Задача №1.
+Дана строка sql-запроса 'select * from students where '.
+Сформируйте часть WHERE этого запроса, используя StringBuilder.
+Данные для фильтрации приведены ниже в виде json строки.
+Если значение null, то параметр не должен попадать в запрос.
+Параметры для фильтрации:
+{"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
+
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: Результат:
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: select * from students where name="Ivanov" and country="Russia" and city="Moscow";
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: select * from students where  not  ( name="Ivanov" and country="Russia" and city="Moscow" );
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: select * from students where  not  ( name="Ivanov" or  country="Russia" or  city="Moscow" );
+фев 16, 2023 1:32:37 PM JavaUnit02KalininPavel_1 main
+WARNING: select * from students where       ( name="Ivanov" or  country="Russia" or  city="Moscow" );
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 loggerInit
+INFO: 		
+
+------------------------------------------------------------
+
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 loggerInit
+INFO: 		Логирование инициализировано
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 main
+WARNING: 
+
+ Задача №2.
+Реализуйте алгоритм сортировки пузырьком числового массива,
+результат после каждой итерации запишите в лог-файл.
+
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 main
+WARNING: Числовой массив перед сортировкой:
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 main
+WARNING: -10.1; 72.06; -66.33; 73.87; 12.84; -63.52; 9.04; 64.83
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Сортировка пузырьком
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Проход №0
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 0 и 1 (-10,100000 <= 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 1 и 2 (-66,330000 > 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 2 и 3 (72,060000 <= 73,870000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 3 и 4 (12,840000 > 73,870000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 4 и 5 (-63,520000 > 73,870000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 5 и 6 (9,040000 > 73,870000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 6 и 7 (64,830000 > 73,870000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Проход №1
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 0 и 1 (-66,330000 > -10,100000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 1 и 2 (-10,100000 <= 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 2 и 3 (12,840000 > 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 3 и 4 (-63,520000 > 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 4 и 5 (9,040000 > 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 5 и 6 (64,830000 > 72,060000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Проход №2
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 0 и 1 (-66,330000 <= -10,100000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 1 и 2 (-10,100000 <= 12,840000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 2 и 3 (-63,520000 > 12,840000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 3 и 4 (9,040000 > 12,840000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 4 и 5 (12,840000 <= 64,830000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Проход №3
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 0 и 1 (-66,330000 <= -10,100000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: обмен 1 и 2 (-63,520000 > -10,100000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 2 и 3 (-10,100000 <= 9,040000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 3 и 4 (9,040000 <= 12,840000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: Проход №4
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 0 и 1 (-66,330000 <= -63,520000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 1 и 2 (-63,520000 <= -10,100000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 bubbleSort
+INFO: без обмена 2 и 3 (-10,100000 <= 9,040000)
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 main
+WARNING: Числовой массив после сортировки:
+фев 16, 2023 1:32:55 PM JavaUnit02KalininPavel_2 main
+WARNING: -66.33; -63.52; -10.1; 9.04; 12.84; 64.83; 72.06; 73.87
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 loggerInit
+INFO: 		
+
+------------------------------------------------------------
+
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 loggerInit
+INFO: 		Логирование инициализировано
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+WARNING: 
+
+ Задача №3.
+Дана json строка (можно сохранить в файл и читать из файла)
+[{"фамилия":"Иванов","оценка":"5","предмет":"Математика"},
+{"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
+{"фамилия":"Краснов","оценка":"5","предмет":"Физика"}]
+Написать метод(ы), который распарсит json и,
+используя StringBuilder, создаст строки вида:
+Студент [фамилия] получил [оценка] по предмету [предмет].
+
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO: Данные из файла data.json
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO: [
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO:     {"фамилия":"Иванов","оценка":"5","предмет":"Математика"},
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO:     {"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO:     {"фамилия":"Краснов","оценка":"5","предмет":"Физика"}
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+INFO: ]
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+WARNING: Результат:
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+WARNING: Студент Иванов получил 5 по предмету Математика.
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+WARNING: Студент Петрова получил 4 по предмету Информатика.
+фев 16, 2023 1:33:01 PM JavaUnit02KalininPavel_3 main
+WARNING: Студент Краснов получил 5 по предмету Физика.
+фев 16, 2023 1:33:18 PM JavaUnit02KalininPavel_4 loggerInit
+INFO: 		
+
+------------------------------------------------------------
+
+фев 16, 2023 1:33:18 PM JavaUnit02KalininPavel_4 loggerInit
+INFO: 		Логирование инициализировано
+фев 16, 2023 1:33:18 PM JavaUnit02KalininPavel_4 main
+WARNING: 
+
+ Задача №4.
+Реализуйте простой калькулятор, с консольным интерфейсом.
+К калькулятору добавить логирование.
+
+фев 16, 2023 1:33:18 PM JavaUnit02KalininPavel_4 controller
+WARNING: Для окончания введите 'E'xit или 'Q'uit. Для нового выражения '='.
+фев 16, 2023 1:33:18 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:33:39 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 222
+фев 16, 2023 1:33:39 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222
+фев 16, 2023 1:33:39 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:33:41 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : +
+фев 16, 2023 1:33:41 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 +
+фев 16, 2023 1:33:41 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:33:45 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 333
+фев 16, 2023 1:33:45 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 + 333 = 555.0
+фев 16, 2023 1:33:45 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:00 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : *2,5
+фев 16, 2023 1:34:00 PM JavaUnit02KalininPavel_4 controller
+WARNING: *2,5 - это не операция (+-*/=).
+фев 16, 2023 1:34:00 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:05 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : *
+фев 16, 2023 1:34:05 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 + 333 = 555.0 *
+фев 16, 2023 1:34:05 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:08 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 2,5
+фев 16, 2023 1:34:08 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 + 333 = 555.0 * 2.5 = 1387.5
+фев 16, 2023 1:34:08 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:13 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : /
+фев 16, 2023 1:34:13 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 + 333 = 555.0 * 2.5 = 1387.5 /
+фев 16, 2023 1:34:13 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:14 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 3
+фев 16, 2023 1:34:14 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  222 + 333 = 555.0 * 2.5 = 1387.5 / 3 = 462.5
+фев 16, 2023 1:34:14 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:20 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : =
+фев 16, 2023 1:34:20 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:26 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 1
+фев 16, 2023 1:34:26 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  1
+фев 16, 2023 1:34:26 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : /
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  1 /
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 0
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 controller
+WARNING: 0 - деление на 0.
+фев 16, 2023 1:34:28 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:32 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : =
+фев 16, 2023 1:34:32 PM JavaUnit02KalininPavel_4 controller
+INFO: For input string: "="
+фев 16, 2023 1:34:32 PM JavaUnit02KalininPavel_4 controller
+WARNING: = - это не число.
+фев 16, 2023 1:34:32 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:41 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 2
+фев 16, 2023 1:34:41 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  1 / 2 = 0.5
+фев 16, 2023 1:34:41 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:34:44 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : =
+фев 16, 2023 1:34:44 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:34:58 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : 147.5895
+фев 16, 2023 1:34:58 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  147.5895
+фев 16, 2023 1:34:58 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:35:01 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : *
+фев 16, 2023 1:35:01 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  147.5895 *
+фев 16, 2023 1:35:01 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:35:09 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : -0,00123
+фев 16, 2023 1:35:09 PM JavaUnit02KalininPavel_4 controller
+WARNING: 		Вычисляемое выражение:  147.5895 * -0.00123 = -0.18153508499999998
+фев 16, 2023 1:35:09 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите знак операции (+-*/=): 
+фев 16, 2023 1:35:13 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : =
+фев 16, 2023 1:35:13 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:35:15 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : й
+фев 16, 2023 1:35:15 PM JavaUnit02KalininPavel_4 controller
+INFO: For input string: "й"
+фев 16, 2023 1:35:15 PM JavaUnit02KalininPavel_4 controller
+WARNING: й - это не число.
+фев 16, 2023 1:35:15 PM JavaUnit02KalininPavel_4 getDataFromUser
+WARNING: Введите число: 
+фев 16, 2023 1:35:18 PM JavaUnit02KalininPavel_4 getDataFromUser
+INFO: Пользователь ввел : q
