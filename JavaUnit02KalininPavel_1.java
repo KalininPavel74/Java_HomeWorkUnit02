@@ -1,3 +1,4 @@
+// git remote add origin https://github.com/KalininPavel74/Java_HomeWorkUnit02.git
 
 import java.util.ArrayList;
 import java.util.logging.ConsoleHandler;
@@ -46,7 +47,7 @@ public class JavaUnit02KalininPavel_1 {
         for(int i=len-1; i>0; i-=2) {
             String w = words.get(i);   // элемент по индексу
             if (w.equalsIgnoreCase("null")) {
-                words.remove(i);   // StringBuilder удаление
+                words.remove(i);   // удаление
                 words.remove(i-1);
             } else {
                 words.set(i, "\""+words.get(i)+"\"");  // замена
